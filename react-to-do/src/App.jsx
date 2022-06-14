@@ -8,6 +8,7 @@ import Todo from './pages/Todo';
 import TodoButton from './components/TodoButton';
 import {DarkModeContext, DarkModeProvider} from  './context/DarkModeContext';
 import Navbar from './pages/Navbar';
+import Page from './pages/Page';
 
 function App() {
   
@@ -25,12 +26,12 @@ function App() {
     <div className="App">
       <DarkModeProvider>
         <div className="App-header ">
-          <Navbar />
           
+          <Todo/>
         </div>
       </DarkModeProvider>
     </div>
   );
 }
 
-export default App
+export default App;
